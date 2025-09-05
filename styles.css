@@ -1,0 +1,32 @@
+body {
+.container {
+  max-width: 400px;
+  margin: auto;
+  background: red;
+  padding: 2px;
+  border-radius: 10px;
+}
+
+audio {
+  margin: 25px 0;
+  width: 75%;
+}
+
+button {
+  margin: 10px;
+  padding: 10px 20px;
+  background: #1db954;
+  border: none;
+  border-radius: 5px;
+  color: blue;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: yellow;
+}
+.container{
+    position: absolute;
+    top: 90px;
+}

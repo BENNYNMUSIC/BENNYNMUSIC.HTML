@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact Me</title>
+  <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+  <div class="wrap">
+    <!-- Contact Card -->
+    <div class="card">
+      <h1>Contact Me</h1>
+      <p class="lead">Send a message and I’ll get back to you. Your info stays private—no email or Facebook shown.</p>
+
+      <form id="contactForm" novalidate>
+        <div class="row">
+          <div>
+            <label for="name">Your Name</label>
+            <input id="name" name="name" placeholder="e.g. Thabo" required />
+          </div>
+          <div>
+            <label for="email">Your Email</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" required />
+          </div>
+        </div>
+        <div>
+          <label for="subject">Subject</label>
+          <input id="subject" name="subject" placeholder="What’s this about?" required />
+        </div>
+        <div>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Type your message..." required></textarea>
+        </div>
+
+        <button class="btn" type="submit">Send Message</button>
+        <div id="formStatus" class="status" role="status" aria-live="polite"></div>
+        <p class="note">By submitting, you agree that we can contact you about your request.</p>
+      </form>
+    </div>
+
+    <!-- Messenger + Info -->
+    <aside class="card aside">
+      <span class="badge">Live Chat</span>
+      <h2>Chat via Facebook Messenger</h2>
+      <p class="lead">Prefer instant chat? Use the Messenger widget below to talk to me directly.</p>
+      <ul class="list">
+        <li><span class="dot"></span><span>Messages arrive in my Facebook Page inbox.</span></li>
+        <li><span class="dot"></span><span>Your email is never shown on the page.</span></li>
+        <li><span class="dot"></span><span>If you’re logged into Facebook, it just works.</span></li>
+      </ul>
+
+      <!-- Messenger Chat Plugin -->
+      <div id="fb-root"></div>
+      <div id="fb-customer-chat" class="fb-customerchat"></div>
+    </aside>
+  </div>
+
+
+</body>
+<script src="contact.js"></script>
+</html>
